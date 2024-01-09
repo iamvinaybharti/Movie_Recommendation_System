@@ -1,0 +1,80 @@
+{% extends "RecEngine/base.html" %}
+{% block content %}
+
+
+            <div class="alert alert-success" role="alert" align="center">
+                      <b><h1 align="center">Details</h1></b>
+            </div>
+
+                <div style="background-color:black;color:white;padding:5px;">
+                    <h1 align="center"><b>{{ title }}</b></h1>
+                </div>
+
+
+                <table class="table table-dark">
+                  <thead>
+                    <tr>
+                      <th scope="col">Sections</th>
+                      <th scope="col">Details</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Title</th>
+                      <td>{{ title }}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Tagline</th>
+                      <td>{{ tagline}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Genre</th>
+                      <td>{{ genre }}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Director</th>
+                      <td>{{ director }}</td>
+                    </tr>
+                     <tr>
+                      <th scope="row">Cast</th>
+                      <td>{{ cast }}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Release Date</th>
+                      <td>{{ release }}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Budget($)</th>
+                      <td>{{ budget }}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Revenue($)</th>
+                      <td>{{ revenue }}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Movie Runtime(mins.)</th>
+                      <td>{{ runtime}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Popularity</th>
+                      <td>{{ popularity }}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Vote Count</th>
+                      <td>{{ vote }}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Final Rating</th>
+                      <td>{{ average }}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Story Overview</th>
+                      <td>{{ overview }}</td>
+                    </tr>
+                  
+                  </tbody>
+            </table>
+
+
+
+{% endblock content %}

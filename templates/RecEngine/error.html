@@ -1,0 +1,28 @@
+{% extends "RecEngine/base.html" %}
+{% block content %}
+
+
+      <div style="background-color:black;color:white;padding:5px" align="center">
+        <p align="center"><h1>Error ! Movie Not Found</h1></p>
+      </div>
+
+        <div class="alert alert-warning" role="alert" align="center">
+                      <b><h3 align="center">These might be the possible reasons</h3></b>
+        </div>
+
+        <ul>
+            <li><b>This movie is not available in our dataset.</b></li>
+            <li><b>The name of the movie is incorrect.</b></li>
+            <li><b>The name of the movie is not complete as per requirement.</b></li>
+            <li><b>You have Entered special characters with movie name.</b></li>
+            <li><b>Something went wrong. Please try again..</b></li>
+        </ul>
+
+        <div class="alert alert-success" role="alert" align="center">
+                      <b><h3 align="center">Please try again by</h3></b>
+        </div>
+        <ul>
+            <li> <h2><b>Entering correct name of movie.</b></h2> </li>
+            <h5><b>Help </b>: Please Verify the name of movie from internet.</h5>
+        </ul>
+{% endblock content %}

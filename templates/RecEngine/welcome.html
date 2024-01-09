@@ -1,0 +1,47 @@
+{% extends "RecEngine/base.html" %}
+{% block content %}
+
+
+
+        <hr>
+        <div align="center">
+            <a href="{% url 'login' %}" class="btn btn-primary" style="width:150px;">Login</a>
+            <a href="{% url 'register' %}" class="btn btn-primary" style="width:150px;">Register</a>
+        </div>
+
+        <hr>
+
+       <div class="card">
+          <div class="card-header">
+            <b>What is Recommendation System ?</b>
+          </div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>During the last few decades, with the rise of Youtube, Amazon, Netflix and many other such web services, recommender systems have taken more and more place in our lives. From e-commerce (suggest to buyers articles that could interest them) to online advertisement (suggest to users the right contents, matching their preferences), recommender systems are today unavoidable in our daily online journeys.</p>
+                <p>In a very general way, recommender systems are algorithms aimed at suggesting relevant items to users (items being movies to watch, text to read, products to buy or anything else depending on industries).</p>
+            </blockquote>
+          </div>
+        </div>
+
+
+
+        <div class="card">
+          <div class="card-header">
+            <b>Why To Use Recommendation System ?</b>
+          </div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+
+                <p>Recommender systems are among the most popular applications of data science today. They are used to predict the "rating" or "preference" that a user would give to an item. Almost every major tech company has applied them in some form or the other: Amazon uses it to suggest products to customers, YouTube uses it to decide which video to play next on autoplay, and Facebook uses it to recommend pages to like and people to follow. What's more, for some companies -think Netflix and Spotify-, the business model and its success revolves around the potency of their recommendations. In fact, Netflix even offered a million dollars in 2009 to anyone who could improve its system by 10%.</p>
+                 <p>The purpose of a recommender system is to suggest relevant items to users. To achieve this task, there exist two major categories of methods : collaborative filtering methods and content based methods. Before digging more into details of particular algorithms.</p>
+            </blockquote>
+          </div>
+        </div>
+
+        <hr>
+
+
+
+
+{% endblock content %}
+

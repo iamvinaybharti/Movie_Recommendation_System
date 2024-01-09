@@ -1,0 +1,37 @@
+{% extends "RecEngine/base.html" %}
+{% block content %}
+
+        <div style="background-color:black;color:white;padding:5px" align="center">
+        <p align="center"><h2>These are the Top 10 Movies that You Should Watch</h2></p>
+      </div>
+
+
+
+
+        <table class="table table-striped">
+                      <thead>
+                        <tr>
+
+                            <th scope="col">Movie Names</th>
+                            <th scope="col">Details</th>
+                            <th scope="col" ><a href="{% url 'receng-result'%}">sort</a> </th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                            {% for movie in movies %}
+
+
+                        <tr>
+
+                          <td>{{ movie }}</td>
+                          <td><a href="{% url 'detail' movie%}" class="btn btn-primary">View Details</a></td>
+
+                        </tr>
+                            {% endfor %}
+                      </tbody>
+
+                </table>
+
+
+{% endblock content %}

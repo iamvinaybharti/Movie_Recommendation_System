@@ -1,0 +1,27 @@
+{% extends "RecEngine/base.html" %}
+{% block content %}
+
+       <div style="background-color:black;color:white;">
+        <h1 align="center"><b>Enter a Movie Name To Get Recommended Movies</b></h1>
+      </div>
+
+       <div class="container" align="center">
+            <form method = "POST" action="/result/">
+            {% csrf_token %}
+            <div class="form-group">
+                <div class="col-lg-5">
+                    <input type="text" name="srh" class="form-control" placeholder="Enter Movie Name">
+                </div>
+                <label class="col-lg-2">
+                    <button type="submit" class="btn btn-danger">Search</button>
+                </label>
+            </div>
+        </form>
+       </div>
+
+<script>
+    // alert("Hello, {{b.name}} | Welcome To Pyres.com")
+</script>
+
+{% endblock content %}
+
