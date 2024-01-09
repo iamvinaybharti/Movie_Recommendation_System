@@ -1,3 +1,31 @@
+Movie Recommendation System
+
+Welcome to the Movie Recommendation System! This system is designed to provide personalized movie recommendations based on user preferences. Whether you're a film enthusiast or just looking for something new to watch, this system aims to enhance your movie-watching experience.
+
+Introduction
+The Movie Recommendation System employs collaborative filtering and machine learning algorithms to analyze user preferences and recommend movies that are likely to be enjoyed. It takes into account user ratings, viewing history, and similarity to other users to provide accurate and relevant recommendations.
+
+How It Works
+The system primarily operates in two phases:
+
+Data Collection: User preferences, movie ratings, and viewing history are collected to build a comprehensive dataset.
+Recommendation Generation: Based on the dataset, the system employs collaborative filtering to identify similar users and recommends movies that align with their preferences but are unseen by the target user.
+Features
+
+
+Users can rate movies to help the system understand their preferences better.
+Get Recommendations:
+
+Based on user interactions and ratings, the system generates movie recommendations.
+Dependencies
+Python 3.x
+Django
+Pandas
+NumPy
+SQLite
+
+Happy movie watching! 🎬
+
 Similarity Score :
 How does it decide which item is most similar to the item user likes? Here come the similarity scores.
 
